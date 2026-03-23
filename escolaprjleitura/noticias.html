@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racismo Ambiental — Notícias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-globe2"></i> Racismo Ambiental</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="noticias.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center" style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
+    <div class="container">
+      <div class="header-badge">Atualidades</div>
+      <h1>Notícias sobre<br>Racismo Ambiental</h1>
+      <p>Casos recentes, impactos e iniciativas globais e nacionais</p>
+    </div>
+  </header>
+
+  <!-- Destaques com filtro -->
+  <section class="container py-5">
+    <h2 class="section-title">♻️ Destaques Recentes</h2>
+
+    <!-- Filtros -->
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="brasil">Brasil</button>
+      <button class="filter-btn" data-filter="amazonia">Amazônia</button>
+      <button class="filter-btn" data-filter="urbano">Urbano</button>
+    </div>
+
+    <div class="row g-4" id="newsGrid">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card" data-category="urbano">
+          <img src="https://images.unsplash.com/photo-1581091870620-1c1b7fc07e0b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Enchentes">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:var(--verde-claro); font-size:0.75rem;">Urbano</span>
+            <h5>Enchentes afetam comunidades periféricas</h5>
+            <p>Comunidades de áreas baixas sofrem com enchentes frequentes devido à ocupação irregular e falta de saneamento.</p>
+            <a href="https://www1.folha.uol.com.br/ambiente/" target="_blank" class="btn-custom btn-sm">Leia mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card" data-category="brasil">
+          <img src="https://images.unsplash.com/photo-1602434224285-17e3f3df13b8?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Mineração">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:var(--terra); font-size:0.75rem;">Brasil</span>
+            <h5>Desastre ambiental em Brumadinho</h5>
+            <p>Comunidades próximas foram severamente impactadas pelo rompimento da barragem, evidenciando racismo ambiental estrutural.</p>
+            <a href="https://g1.globo.com/mg/minas-gerais/" target="_blank" class="btn-custom btn-sm">Leia mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card" data-category="amazonia">
+          <img src="https://images.unsplash.com/photo-1532281464216-6d4bfbf12123?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Desmatamento">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#2d5c42; font-size:0.75rem;">Amazônia</span>
+            <h5>Desmatamento na Amazônia</h5>
+            <p>Impacta diretamente comunidades ribeirinhas e indígenas, colocando vidas, culturas e ecossistemas em risco.</p>
+            <a href="https://www.amazonas.am.gov.br/" target="_blank" class="btn-custom btn-sm">Leia mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card" data-category="amazonia">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Yanomami">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:#2d5c42; font-size:0.75rem;">Amazônia</span>
+            <h5>Crise Yanomami e garimpo ilegal</h5>
+            <p>Contaminação por mercúrio em rios compromete a saúde e alimentação do povo Yanomami, em emergência humanitária.</p>
+            <a href="https://apiboficial.org/" target="_blank" class="btn-custom btn-sm">Leia mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card" data-category="urbano">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Poluição urbana">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:var(--verde-claro); font-size:0.75rem;">Urbano</span>
+            <h5>Polo petroquímico de Camaçari</h5>
+            <p>Moradores da periferia de Salvador convivem com poluição atmosférica elevada e altas taxas de doenças respiratórias.</p>
+            <a href="https://www.wwf.org.br/" target="_blank" class="btn-custom btn-sm">Leia mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm news-card" data-category="brasil">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Quilombolas">
+          <div class="card-body">
+            <span class="badge mb-2" style="background:var(--terra); font-size:0.75rem;">Brasil</span>
+            <h5>Comunidades quilombolas em risco</h5>
+            <p>Mais de 700 territórios quilombolas aguardam regularização fundiária, expostos a grilagem e degradação ambiental.</p>
+            <a href="https://www.palmares.gov.br/" target="_blank" class="btn-custom btn-sm">Leia mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos Internacionais -->
+  <section class="section-alt py-5">
+    <div class="container">
+      <h2 class="section-title">🎌 Casos Internacionais</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="highlight">
+            <strong>🇺🇸 Estados Unidos:</strong> Comunidades negras sofrem maior exposição à poluição industrial e são as mais atingidas por desastres naturais como o furacão Katrina.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight">
+            <strong>🇿🇦 África do Sul:</strong> Populações periféricas têm acesso limitado a água potável e saneamento, herança direta do apartheid ambiental.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight">
+            <strong>🇮🇳 Índia:</strong> Moradores de favelas urbanas sofrem com poluição extrema, enchentes e ausência de coleta de resíduos sólidos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como se manter informado -->
+  <section class="container py-5 text-center">
+    <h2 class="section-title">🔗 Como se manter informado</h2>
+    <ul class="lista-combater" style="text-align:left; margin-bottom:32px;">
+      <li>Seguir portais de notícias confiáveis sobre meio ambiente e justiça social.</li>
+      <li>Participar de grupos comunitários e ONGs que monitoram riscos ambientais.</li>
+      <li>Assinar newsletters sobre políticas públicas e ações sustentáveis.</li>
+      <li>Acompanhar pesquisadores e ativistas ambientais nas redes sociais.</li>
+    </ul>
+    <a href="https://www.wwf.org.br/" target="_blank" class="btn-custom">
+      <i class="bi bi-globe me-2"></i>Siga organizações ambientais
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Racismo Ambiental | Contato: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
